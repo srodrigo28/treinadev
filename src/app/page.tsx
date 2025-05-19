@@ -156,7 +156,7 @@ export default function Home() {
           "
         >
           <Image
-            src="/barber-home.jpg"
+            src="/barber-home.png"
             alt="Vercel Logo"
             width={300}
             height={300}
