@@ -5,14 +5,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center justify-center mx-auto px-10 ">
       <h1 className="text-3xl px-5 pt-3 text-center">
         Transforme suas <span className="text-blue-700">ideias em realidade:</span> crie Aplicativos.
       </h1>
       <h2 className="text-2xl px-5 pt-2 pb-2 text-center">
         IA inovadores <span className="text-blue-700">sem escrever uma única linha</span> de código!
       </h2>
-
            <Link
             href="https://api.whatsapp.com/send?phone=5562998579084&text=Quero%20fazer%20um%20agendamento%20hoje!"
             className="btn-whatsapp"
@@ -21,7 +20,7 @@ export default function Home() {
             <Image src="/whats.webp" alt="Botão Whatsapp" width={30} height={50} className="animate-pulse fixed top-12 right-10 md:right-52"  />
       </Link>
 
-      <video width="55%" height="340" controls preload="none" className="mb-5 block">
+      <video controls preload="none" className="mb-5 block w-[100%] md:w-[70%]">
          <track
         src="/path/to/captions.vtt"
         kind="subtitles"
