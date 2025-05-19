@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,6 +13,14 @@ export default function Home() {
         IA inovadores <span className="text-blue-700">sem escrever uma única linha</span> de código!
       </h2>
 
+           <Link
+            href="https://api.whatsapp.com/send?phone=5562998579084&text=Quero%20fazer%20um%20agendamento%20hoje!"
+            className="btn-whatsapp"
+            target="_blank"
+      >
+            <Image src="/whats.webp" alt="Botão Whatsapp" width={30} height={50} className="animate-pulse fixed top-12 right-10 md:right-52"  />
+      </Link>
+
       <video width="55%" height="340" controls preload="none" className="mb-5 block">
          <track
         src="/path/to/captions.vtt"
@@ -22,7 +31,9 @@ export default function Home() {
         <source src="/video/apresentacao-restaurante.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <button className="bg-blue-700 p-3 w-80 mx-auto rounded-lg mb-5 md:hover:w-[40%] md:hover:p-5 duration-300 animate-pulse">Quero conhecer</button>
+      <Link href="https://pay.kiwify.com.br/2PnZbSq">
+        <button className="bg-blue-700 p-3 w-80 mx-auto rounded-lg mb-5 duration-300 animate-pulse">Quero conhecer</button>
+      </Link>
 
       <h2 className="text-3xl p-5 text-center">
         Nosso projetos <span className="text-blue-700">Gravados:</span>
