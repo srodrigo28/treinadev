@@ -35,7 +35,7 @@ export default function Home() {
       </Link>
 
       <h2 className="text-3xl p-5 text-center">
-        Nosso projetos <span className="text-blue-700">Gravados:</span>
+        Nossos projetos <span className="text-blue-700">Gravados:</span>
       </h2>
 
       <h2 className="text-3xl p-5 text-center">
